@@ -4,13 +4,13 @@ Personal portfolio of game programming, systems design, and development tools.
 
 Published at https://denis-gamolya.github.io/ using GitHub Pages from the root
 of the main branch. The site is plain HTML/CSS, with local fonts, icons, images,
-and a resume PDF. There is no build step or JavaScript dependency.
+and screenshots. There is no build step or JavaScript dependency.
 
 ## Content flow
 
 ```text
 Profile sidebar                 Projects
-  Resume / LinkedIn / GitHub      Ultrawide Toggle -> Download / GitHub
+  Email / LinkedIn / GitHub      Ultrawide Toggle -> Download / GitHub
                                   Retcon -> Play game / GitHub
                                 Other projects
                                   Celeste map visualizer / Twine / Unity -> GitHub
@@ -35,3 +35,7 @@ included with the mod. Retcon retains its existing Netlify play URL.
 Retcon's voting screenshot is supplied by Denis and stored unchanged in
 assets/retcon-voting.png. Its full frame is preserved; select the image to see
 it at full size. The compact desktop preview keeps the project overview short.
+
+
+The public site offers an Email link rather than a downloadable resume.
+Resume PDFs are excluded from this repository.
