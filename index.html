@@ -96,6 +96,7 @@
       .small-project .text-link { font-size: 14px; gap: 8px; }
       .draft-note { font-size: 11px; text-align: left; }
     }
+    .thumbnail--ultrawide { aspect-ratio: auto; object-fit: contain; }
   </style>
 </head>
 <body>
@@ -113,30 +114,40 @@
     </aside>
     <main id="projects">
       <h2>Projects</h2>
-      <article class="project project--text">
-        <div class="project-copy">
-          <h3>Celeste ultrawide mod</h3>
-          <p>Customizable ultrawide support for Celeste.</p>
-          <span class="project-status">GitHub &amp; GameBanana releases planned</span>
-        </div>
-      </article>
       <article class="project">
         <figure>
-          <img class="thumbnail" src="assets/party-placeholder.png"
-               alt="Illustrative placeholder showing a sandy block arena; not actual Sketchy Alibis footage."
-               width="960" height="432">
-          <figcaption>Screenshot placeholder</figcaption>
+          <img class="thumbnail thumbnail--ultrawide"
+               src="assets/celeste-ultrawide-boundary.jpg"
+               alt="Celeste in ultrawide, with a yellow overlay marking the original 16:9 gameplay frame."
+               width="3440" height="1440">
+          <figcaption>Ultrawide view with the original 16:9 boundary.</figcaption>
         </figure>
         <div class="project-copy">
-          <h3>Sketchy Alibis</h3>
-          <p>A party game.</p>
+          <h3>Ultrawide Toggle</h3>
+          <p>Celeste mod with configurable aspect ratios, shortcuts, and boundary overlays, preserving the original 16:9 gameplay camera.</p>
+          <div class="project-actions">
+            <a class="text-link" href="https://gamebanana.com/mods/733482"
+               aria-label="Download Ultrawide Toggle on GameBanana">
+              Download<img class="external" src="assets/box-arrow-up-right.svg" alt="">
+            </a>
+            <a class="text-link" href="https://github.com/Denis-Gamolya/Celeste-Ultrawide-Toggle"
+               aria-label="View Ultrawide Toggle on GitHub">
+              GitHub<img class="external" src="assets/box-arrow-up-right.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </article>
+      <article class="project project--text">
+        <div class="project-copy">
+          <h3>Retcon</h3>
+          <p>A 2–8 player drawing-and-bluffing game: draw a prompt, change your story, and vote Truth or Lie.</p>
           <div class="project-actions">
             <a class="text-link" href="https://candid-crisp-9ad27c.netlify.app/"
-               aria-label="Play Sketchy Alibis">
+               aria-label="Play Retcon">
               Play game<img class="external" src="assets/box-arrow-up-right.svg" alt="">
             </a>
-            <a class="text-link" href="https://github.com/Denis-Gamolya/sketchy-alibis"
-               aria-label="View Sketchy Alibis on GitHub">
+            <a class="text-link" href="https://github.com/Denis-Gamolya/retcon"
+               aria-label="View Retcon on GitHub">
               GitHub<img class="external" src="assets/box-arrow-up-right.svg" alt="">
             </a>
           </div>
@@ -154,7 +165,6 @@
         <article class="small-project"><h3>Twine game</h3><a class="text-link" href="https://github.com/Denis-Gamolya/Twine-Detective-Game" aria-label="View Twine game project">View project<img class="external" src="assets/box-arrow-up-right.svg" alt=""></a></article>
         <article class="small-project"><h3>Unity platformer</h3><a class="text-link" href="https://github.com/Denis-Gamolya/Unity-Platformer" aria-label="View Unity platformer project">View project<img class="external" src="assets/box-arrow-up-right.svg" alt=""></a></article>
       </section>
-      <p class="draft-note">Sketchy Alibis visual is an illustrative placeholder.</p>
     </main>
   </div>
 </body>
