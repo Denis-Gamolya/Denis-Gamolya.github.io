@@ -30,3 +30,8 @@ Project descriptions are based on each project's README. Ultrawide Toggle's
 install button links to https://gamebanana.com/mods/733482, resolved from its
 README's install link. The custom character skin in the screenshot is not
 included with the mod. Retcon retains its existing Netlify play URL.
+
+
+Retcon's voting screenshot is supplied by Denis and stored unchanged in
+assets/retcon-voting.png. Its full frame is preserved; select the image to see
+it at full size. The compact desktop preview keeps the project overview short.

@@ -96,7 +96,12 @@
       .small-project .text-link { font-size: 14px; gap: 8px; }
       .draft-note { font-size: 11px; text-align: left; }
     }
-    .thumbnail--ultrawide { aspect-ratio: auto; object-fit: contain; }
+    .thumbnail--ultrawide,
+    .thumbnail--retcon { aspect-ratio: auto; object-fit: contain; }
+    .project--retcon figure { width: 100%; max-width: 320px; }
+    @media (max-width: 760px) {
+      .project--retcon figure { max-width: none; }
+    }
   </style>
 </head>
 <body>
@@ -137,7 +142,16 @@
           </div>
         </div>
       </article>
-      <article class="project project--text">
+      <article class="project project--retcon">
+        <figure>
+          <a href="assets/retcon-voting.png" aria-label="View full-size Retcon gameplay screenshot">
+            <img class="thumbnail thumbnail--retcon"
+                 src="assets/retcon-voting.png"
+                 alt="Retcon voting round showing two drawings and their claims, with Truth and Lie choices."
+                 width="3200" height="1800">
+          </a>
+          <figcaption>Drawing and bluffing in Retcon.</figcaption>
+        </figure>
         <div class="project-copy">
           <h3>Retcon</h3>
           <p>A 2–8 player drawing-and-bluffing game: draw a prompt, change your story, and vote Truth or Lie.</p>
