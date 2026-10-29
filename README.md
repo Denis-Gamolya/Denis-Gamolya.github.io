@@ -34,7 +34,9 @@ included with the mod. Retcon retains its existing Netlify play URL.
 
 Retcon's voting screenshot is supplied by Denis and stored unchanged in
 assets/retcon-voting.png. Its full frame is preserved; select the image to see
-it at full size. The compact desktop preview keeps the project overview short.
+it at full size. Both featured images use matching 16:9 presentation frames with object-fit:
+contain. Each screenshot is shown in full, with neutral letterboxing where
+its native aspect differs; selecting either image opens its full-size file.
 
 
 The public site offers an Email link rather than a downloadable resume.

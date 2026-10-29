@@ -33,7 +33,21 @@
     h2 { font-size: 40px; line-height: 1.2; letter-spacing: -.035em; font-weight: 700; margin: 10px 0 26px; }
     .project { display: grid; grid-template-columns: 46% minmax(0, 1fr); gap: 32px; padding-bottom: 20px; border-bottom: 1px solid var(--line); margin-bottom: 20px; }
     figure { margin: 0; }
-    .thumbnail { width: 100%; height: auto; aspect-ratio: 2.22; display: block; object-fit: cover; background: #e4eaf0; }
+    .screenshot-link {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #f4f6f8;
+      border: 1px solid var(--line);
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .thumbnail {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
     figcaption { font-size: 14px; color: var(--secondary); margin-top: 6px; }
     .project-copy { padding-top: 11px; }
     h3 { font-size: 28px; line-height: 1.25; letter-spacing: -.03em; margin: 0 0 16px; font-weight: 700; }
@@ -67,7 +81,6 @@
       main { padding-top: 12px; }
       h2 { font-size: 32px; margin: 6px 0 20px; }
       .project { margin-bottom: 18px; padding-bottom: 18px; }
-      .thumbnail { aspect-ratio: 2.45; }
       .project-copy p { font-size: 18px; }
       h3 { font-size: 26px; }
       .bio { margin: 24px 0 30px; }
@@ -96,12 +109,6 @@
       .small-project .text-link { font-size: 14px; gap: 8px; }
       .draft-note { font-size: 11px; text-align: left; }
     }
-    .thumbnail--ultrawide,
-    .thumbnail--retcon { aspect-ratio: auto; object-fit: contain; }
-    .project--retcon figure { width: 100%; max-width: 320px; }
-    @media (max-width: 760px) {
-      .project--retcon figure { max-width: none; }
-    }
   </style>
 </head>
 <body>
@@ -121,10 +128,13 @@
       <h2>Projects</h2>
       <article class="project">
         <figure>
-          <img class="thumbnail thumbnail--ultrawide"
-               src="assets/celeste-ultrawide-boundary.jpg"
-               alt="Celeste in ultrawide, with a yellow overlay marking the original 16:9 gameplay frame."
-               width="3440" height="1440">
+          <a class="screenshot-link" href="assets/celeste-ultrawide-boundary.jpg"
+             aria-label="View full-size Ultrawide Toggle screenshot">
+            <img class="thumbnail"
+                 src="assets/celeste-ultrawide-boundary.jpg"
+                 alt="Celeste in ultrawide, with a yellow overlay marking the original 16:9 gameplay frame."
+                 width="3440" height="1440">
+          </a>
           <figcaption>Ultrawide view with the original 16:9 boundary.</figcaption>
         </figure>
         <div class="project-copy">
@@ -144,8 +154,8 @@
       </article>
       <article class="project project--retcon">
         <figure>
-          <a href="assets/retcon-voting.png" aria-label="View full-size Retcon gameplay screenshot">
-            <img class="thumbnail thumbnail--retcon"
+          <a class="screenshot-link" href="assets/retcon-voting.png" aria-label="View full-size Retcon gameplay screenshot">
+            <img class="thumbnail"
                  src="assets/retcon-voting.png"
                  alt="Retcon voting round showing two drawings and their claims, with Truth and Lie choices."
                  width="3200" height="1800">
