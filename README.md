@@ -44,5 +44,6 @@ Resume PDFs are excluded from this repository.
 
 
 Other projects have short, regular-text captions. The Gameplay Viewer caption
-was supplied by Denis; Twine and Unity summaries follow the previously supplied
-resume's project details. No new features are claimed.
+was supplied by Denis; Twine and Unity summaries are grounded in their repository source:
+Twine_Detective_Game/Twine_Detective.html and Assets/PlayerMovement.cs,
+Assets/PlayerRespawn.cs, Assets/CameraControl.cs, respectively. No new features are claimed.
