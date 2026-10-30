@@ -13,7 +13,7 @@ Profile sidebar                 Projects
   Email / LinkedIn / GitHub      Ultrawide Toggle -> Download / GitHub
                                   Retcon -> Play game / GitHub
                                 Other projects
-                                  Celeste map visualizer / Twine / Unity -> GitHub
+                                  Celeste Gameplay Viewer / Twine / Unity -> GitHub
 ```
 
 Edit index.html to update copy and links. Assets live in assets/ and use
@@ -41,3 +41,8 @@ its native aspect differs; selecting either image opens its full-size file.
 
 The public site offers an Email link rather than a downloadable resume.
 Resume PDFs are excluded from this repository.
+
+
+Other projects have short, regular-text captions. The Gameplay Viewer caption
+was supplied by Denis; Twine and Unity summaries follow the previously supplied
+resume's project details. No new features are claimed.

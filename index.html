@@ -54,9 +54,17 @@
     .project-copy p { font-size: 20px; color: var(--secondary); margin: 0 0 21px; line-height: 1.5; }
     .project-copy .text-link { gap: 16px; }
     .other h2 { font-size: 28px; margin: 0 0 5px; letter-spacing: -.025em; }
-    .small-project { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-block: 7px; min-height: 51px; border-bottom: 1px solid var(--line); }
+    .small-project { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-block: 10px; min-height: 51px; border-bottom: 1px solid var(--line); }
     .small-project h3 { font-size: 20px; letter-spacing: -.015em; font-weight: 500; margin: 0; }
-    .small-project .text-link { font-size: 16px; gap: 15px; }
+    .small-project-copy { min-width: 0; }
+    .small-project p {
+      margin: 3px 0 0;
+      color: var(--secondary);
+      font-size: 14px;
+      line-height: 1.5;
+      font-style: normal;
+    }
+    .small-project .text-link { flex-shrink: 0; font-size: 16px; gap: 15px; }
     .draft-note { margin: 11px 0 0; color: var(--secondary); font-size: 12px; text-align: right; }
     .project--text { grid-template-columns: 1fr; }
     .project--text .project-copy { padding-top: 0; }
@@ -105,6 +113,7 @@
       .project-copy p { font-size: 16px; margin-bottom: 9px; }
       .project-copy .text-link { font-size: 17px; }
       .other h2 { font-size: 24px; }
+      .small-project { align-items: flex-start; }
       .small-project h3 { font-size: 17px; }
       .small-project .text-link { font-size: 14px; gap: 8px; }
       .draft-note { font-size: 11px; text-align: left; }
@@ -180,14 +189,35 @@
       <section class="other" aria-labelledby="other-title">
         <h2 id="other-title">Other projects</h2>
         <article class="small-project">
-          <h3>Celeste map visualizer</h3>
+          <div class="small-project-copy">
+            <h3>Celeste Gameplay Viewer</h3>
+            <p>Interactive level-inspection tool for AI-assisted Celeste mapping.</p>
+          </div>
           <a class="text-link" href="https://github.com/Denis-Gamolya/celeste-gameplay-viewer"
-             aria-label="View Celeste map visualizer project">
+             aria-label="View Celeste Gameplay Viewer project">
             View project<img class="external" src="assets/box-arrow-up-right.svg" alt="">
           </a>
         </article>
-        <article class="small-project"><h3>Twine game</h3><a class="text-link" href="https://github.com/Denis-Gamolya/Twine-Detective-Game" aria-label="View Twine game project">View project<img class="external" src="assets/box-arrow-up-right.svg" alt=""></a></article>
-        <article class="small-project"><h3>Unity platformer</h3><a class="text-link" href="https://github.com/Denis-Gamolya/Unity-Platformer" aria-label="View Unity platformer project">View project<img class="external" src="assets/box-arrow-up-right.svg" alt=""></a></article>
+        <article class="small-project">
+          <div class="small-project-copy">
+            <h3>Twine game</h3>
+            <p>A branching detective story with conditional dialogue and investigation state tracking.</p>
+          </div>
+          <a class="text-link" href="https://github.com/Denis-Gamolya/Twine-Detective-Game"
+             aria-label="View Twine game project">
+            View project<img class="external" src="assets/box-arrow-up-right.svg" alt="">
+          </a>
+        </article>
+        <article class="small-project">
+          <div class="small-project-copy">
+            <h3>Unity platformer</h3>
+            <p>A 2D physics-based platformer with hazards, respawning, and state-driven animation.</p>
+          </div>
+          <a class="text-link" href="https://github.com/Denis-Gamolya/Unity-Platformer"
+             aria-label="View Unity platformer project">
+            View project<img class="external" src="assets/box-arrow-up-right.svg" alt="">
+          </a>
+        </article>
       </section>
     </main>
   </div>
